@@ -1,0 +1,14 @@
+apiVersion: cert-manager.io/v1
+
+kind: Certificate
+metadata:
+  name: wishnek-home-com-tls
+spec:
+  secretName: wishnek-home-com
+  issuerRef:
+    name: letsencrypt-prod
+    kind: ClusterIssuer
+  commonName: wishnek-home.com
+  dnsNames:
+    - wishnek-home.com
+    - www.wishnek-home.com
