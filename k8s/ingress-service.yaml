@@ -13,8 +13,7 @@ spec:
     - hosts:
         - wishnek-home.com
         - www.wishnek-home.com
-        secretName: wishnek-home-com
-
+      secretName: wishnek-home-com
   rules:
     - host: wishnek-home.com
       http:
